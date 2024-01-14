@@ -31,7 +31,7 @@ function resta() {
 }
 /*Funcion de filtro, filtra datos que no sean numeros del gregados por usuarios al promt */
 function filtro() {
-    if (isNaN(precio)|| precio === null) {
+    if (isNaN(precio)|| precio === 'null') {
         alert('Debes seleccionar un numero')
         precio = prompt('Selecciona el valor de tu producto', 400000)
         return filtro()
