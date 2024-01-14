@@ -3,6 +3,7 @@ let cantidad = document.querySelector(".cantidad")
 let total = document.querySelector(".valor-total")
 const precioSpan = document.querySelector(".precio-inicial")
 
+
 filtro()
 
 precioSpan.innerHTML = precio
@@ -28,9 +29,9 @@ function resta() {
     }
     return
 }
-/*Funcion de filtro, filtra datos que no sean numeros del agregados por usuarios al promt */
+/*Funcion de filtro, filtra datos que no sean numeros del gregados por usuarios al promt */
 function filtro() {
-    if (isNaN(precio)) {
+    if (isNaN(precio)|| precio === null) {
         alert('Debes seleccionar un numero')
         precio = prompt('Selecciona el valor de tu producto', 400000)
         return filtro()
